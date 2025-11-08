@@ -20,7 +20,7 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 ## Authentication
 
 <p align="center">
-  <img src="[assets/Login.png](https://drive.google.com/file/d/1ErbeoRYyrOVudIY9apYp04HQ77zGbWTU/view?usp=sharing)" alt="Login Page" width="100%"/>
+  <img src="Screenshot 2025-11-08 144320.png" alt="Login Page" width="100%"/>
 </p>
 
 ## Dashboard
