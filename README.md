@@ -19,44 +19,55 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 
 ## Authentication
 
-<p align="center" >
-  <img src="assets/Login.png" alt="Login Page" width="100%"/></p>
+<p align="center">
+  <img src="[assets/Login.png](https://drive.google.com/file/d/1ErbeoRYyrOVudIY9apYp04HQ77zGbWTU/view?usp=sharing)" alt="Login Page" width="100%"/>
+</p>
 
 ## Dashboard
 
 <p align="center">
-  <img src="assets/Dashboard.png" alt="Dashboard" width="100%"/>
+  <img src="assets/Dashboard.png" alt="Dashboard" width="100%"/>
 </p>
 
 ## Expenses
 
 <p align="center">
-  <img src="assets/Expenses.png" alt="Add Expense" width="100%"/></p>
+  <img src="assets/Expenses.png" alt="Add Expense" width="100%"/>
+</p>
 
 ## Budget
 
-<p align="center"><img src="assets/Budget.png" alt="Budget Page" width="100%"/></p>
+<p align="center">
+  <img src="assets/Budget.png" alt="Budget Page" width="100%"/>
+</p>
 
 ## Bills
 
-<p align="center"><img src="assets/Bills.png" alt="Bill Page" width="100%"/></p>
+<p align="center">
+  <img src="assets/Bills.png" alt="Bill Page" width="100%"/>
+</p>
 
-## Notification
+## Notifications
 
-<p align="center"> <img src="assets/Notification.png" alt="Notifications" width="100%"/></p>
+<p align="center">
+  <img src="assets/Notification.png" alt="Notifications" width="100%"/>
+</p>
 
-## Setting
+## Settings
 
-<p align="center"> <img src="assets/Setting.png" alt="Setting" width="100%"/></p>
+<p align="center">
+  <img src="assets/Setting.png" alt="Settings Page" width="100%"/>
+</p>
 
-## Report
+## Reports
 
-<p align="center"> <img src="assets/Report.png" alt="Reports Page" width="100%"/> </p>
+<p align="center">
+  <img src="assets/Report.png" alt="Reports Page" width="100%"/>
+</p>
 
 ---
 
-
-> 🎬 _Click the thumbnail above to watch the full 4-minute demo video on YouTube!_
+> 🎬 _Click the thumbnails above to explore the complete project UI!_
 
 ---
 
@@ -75,7 +86,6 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 ## ✨ Features
 
 ### 👤 User Management
-
 - Secure user registration and login
 - Password encryption using BCrypt
 - Role-based access (User/Admin)
@@ -86,35 +96,31 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 ---
 
 ### 💵 Expense Management
-
 - Add, view, update, and delete expenses
 - Pin/unpin important expenses
-- Filter by category, payment method, or date range and many more
+- Filter by category, payment method, or date range
 - Search and sort expenses instantly
 - Each expense linked to the logged-in user
 
 ---
 
 ### 🎯 Budget Management
-
 - Create budgets per category/time period
 - Real-time budget tracking and alerts
-- Auto calculation of remaining balance
+- Auto-calculation of remaining balance
 - Manage multiple budgets simultaneously
 
 ---
 
 ### 🔁 Recurring Bills
-
 - Manage recurring bills (rent, subscriptions, EMIs, etc.)
 - Track frequency, next due date, and payment history
 - Set reminders for upcoming or overdue bills
-- Once the bill due date is over after marking as paid , it continues to next cycle and comes back to current cycle 7 days before duedate
+- Automatically continues to next cycle after payment and reappears 7 days before the next due date
 
 ---
 
 ### 🔔 Notifications
-
 - Budget limit alerts
 - Bill payment reminders
 - View all/unread notifications
@@ -123,7 +129,6 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 ---
 
 ### 📊 Reports & Analytics
-
 - Download reports (CSV)
 - Interactive dashboard with:
   - Expense charts (bar/pie)
@@ -132,7 +137,6 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 ---
 
 ### 🎨 UI / UX
-
 - Responsive modern design (desktop & mobile)
 - Clean card-based layout
 - Real-time validation and toasts
@@ -141,7 +145,6 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 ---
 
 ### 🔒 Security
-
 - Encrypted passwords
 - Role-based access
 - CSRF + XSS protection
@@ -152,7 +155,7 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 
 ## 🚀 Steps to Run the Application on Your Laptop
 
-> 🧩 **Prerequisite:** Install and Sign in to **Docker Desktop**
+> 🧩 **Prerequisite:** Install and sign in to **Docker Desktop**
 
 ---
 
@@ -171,41 +174,4 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 2. Place the provided file `expenses_tracker_runInDocker.rar` inside it
 3. Extract the `.rar` file
 4. Make sure your folder structure looks like this:
-
-```
-
-my-expenses-tracker/
-├── docker-compose.yml
-└── init-db/
-└── backup.sql
-
-```
-
-> ⚠️ Important: The `docker-compose.yml` file **must** be directly inside `my-expenses-tracker/` (not in a subfolder).
-
----
-
-### **Step 3: Launch the Application**
-
-Open **Command Prompt / PowerShell / Terminal**, then:
-
-```bash
-cd path\to\my-expenses-tracker
-docker compose up -d
-```
-
-> 🐳 Docker will automatically pull required images (backend, frontend, MySQL) and start everything in a private network.
-
----
-
-### **Step 4: Access the Application**
-
-Wait about 1 minute for services to start, then open:
-
-👉 **[http://localhost](http://localhost)**
-
-The app will load with initial demo data.
-Any new data you add will be stored **persistently** on your machine.
-
----
 
