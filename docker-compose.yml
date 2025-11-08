@@ -1,0 +1,52 @@
+
+services:
+  # 1. DATABASE SERVICE 
+  db:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: expenses_tracker
+      MYSQL_ROOT_PASSWORD: Dnyaneshwar@19
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./init-db:/docker-entrypoint-initdb.d
+    networks:
+      - expense-network
+
+  # 2. BACKEND SERVICE - CRITICAL FIX: ADD RESTART POLICY
+  backend:
+    image: dnyaneshwar19/expenses-tracker-backend:latest
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/expenses_tracker?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=Dnyaneshwar@19
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    networks:
+      - expense-network
+    depends_on:
+      - db 
+    
+    # CRITICAL FIX: Ensures the backend restarts after connection failure until the DB is ready.
+    restart: on-failure 
+
+  # 3. FRONTEND SERVICE
+  frontend:
+    image: dnyaneshwar19/expenses-tracker-frontend:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - expense-network
+
+# 4. NETWORK
+networks:
+  expense-network:
+    driver: bridge
+
+# 5. VOLUME
+volumes:
+  mysql-data:

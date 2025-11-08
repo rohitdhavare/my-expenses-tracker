@@ -1,0 +1,25 @@
+{
+  "short_name": "SpendWise",
+  "name": "SpendWise - Smart Expense Tracker",
+  "icons": [
+    {
+      "src": "wallet.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "wallet.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "wallet.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#ffffff"
+}

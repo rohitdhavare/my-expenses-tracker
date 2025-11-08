@@ -1,0 +1,147 @@
+.budgets-container {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.budgets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.budgets-header h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.budgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.budget-card {
+  background: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.budget-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.budget-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.budget-info h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.budget-period {
+  margin: 0;
+  color: #999;
+  font-size: 13px;
+}
+
+.budget-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.budget-amount .label {
+  color: #666;
+  font-size: 14px;
+}
+
+.budget-amount .value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.progress-section {
+  margin-bottom: 15px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.progress-percent {
+  font-weight: 700;
+}
+
+.progress-percent.warning {
+  color: #f39c12;
+}
+
+.progress-percent.over {
+  color: #e74c3c;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+.progress-fill.warning {
+  background: linear-gradient(90deg, #f39c12 0%, #e67e22 100%);
+}
+
+.progress-fill.over {
+  background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.budget-alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.budget-alert.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.budget-alert.over {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+@media (max-width: 768px) {
+  .budgets-grid {
+    grid-template-columns: 1fr;
+  }
+}
