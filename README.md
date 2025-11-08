@@ -17,52 +17,50 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 
 # 📸 Project Preview
 
-## Authentication
 
 <p align="center">
   <img src="Screenshot 2025-11-08 144320.png" alt="Login Page" width="100%"/>
 </p>
 
-## Dashboard
 
 <p align="center">
-  <img src="assets/Dashboard.png" alt="Dashboard" width="100%"/>
+  <img src="p1.png" alt="Dashboard" width="100%"/>
 </p>
 
-## Expenses
+
 
 <p align="center">
-  <img src="assets/Expenses.png" alt="Add Expense" width="100%"/>
+  <img src="p2.png" alt="Add Expense" width="100%"/>
 </p>
 
-## Budget
+
 
 <p align="center">
-  <img src="assets/Budget.png" alt="Budget Page" width="100%"/>
+  <img src="p3.png" alt="Budget Page" width="100%"/>
 </p>
 
-## Bills
+
 
 <p align="center">
-  <img src="assets/Bills.png" alt="Bill Page" width="100%"/>
+  <img src="p4.png" alt="Bill Page" width="100%"/>
 </p>
 
-## Notifications
+
 
 <p align="center">
-  <img src="assets/Notification.png" alt="Notifications" width="100%"/>
+  <img src="p5.png" alt="Notifications" width="100%"/>
 </p>
 
-## Settings
+
 
 <p align="center">
-  <img src="assets/Setting.png" alt="Settings Page" width="100%"/>
+  <img src="p6.png" alt="Settings Page" width="100%"/>
 </p>
 
-## Reports
+
 
 <p align="center">
-  <img src="assets/Report.png" alt="Reports Page" width="100%"/>
+  <img src="p7.png" alt="Reports Page" width="100%"/>
 </p>
 
 ---
@@ -173,5 +171,7 @@ Easily view Insights, Budgets, Bills and Reports — all in one dashboard.
 1. Create a folder on your Desktop named **my-expenses-tracker**
 2. Place the provided file `expenses_tracker_runInDocker.rar` inside it
 3. Extract the `.rar` file
-4. Make sure your folder structure looks like this:
+4. Make sure your folder structure looks like thi
 
+
+##Developed By ----- Rohit Dhavare
